@@ -40,3 +40,37 @@
 - Column
 - Row
 - Box
+
+--- 
+
+## Android 앱에 이미지 추가
+
+### 이미지 컴포저블 추가
+- painterResource() : drawable file의 이미지를 가져옴
+
+### Box layout 추가
+
+#### Box
+- 요소들을 서로 위에 쌓을 수 있음
+- 정렬 가능
+
+### 이미지 Composable의 위치 지정 및 크기 조정
+
+#### Modifier
+- Composable이 매개변수로 허용해야 사용가능
+- 배경 지정
+- padding 지정
+- 동작 추가
+- fillMaxHeight, fillMaxWidth : 높이, 너비 채우기
+
+#### ContentScale
+- ContentScale을 이용하여 이미지의 비율 조정 가능
+- ContentScale.Crop
+
+### 텍스트 정렬 및 패딩 추가
+- fillMaxWidth : 너비를 끝까지 채울 수 있는 공간을 만듬
+- wrapContentWidth : 채울 수 있는 공간 내에서 자신의 너비만큼 채움
+    - 정렬 가능
+    - 매개 변수에 Alignment.Start, Alignment.Top, Alignment.End, Alignment.Bottom을 넣어 정렬 가능
+- padding은 Modifier를 통해 사용이 가능
+
