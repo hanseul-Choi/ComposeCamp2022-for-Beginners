@@ -74,3 +74,11 @@
     - 매개 변수에 Alignment.Start, Alignment.Top, Alignment.End, Alignment.Bottom을 넣어 정렬 가능
 - padding은 Modifier를 통해 사용이 가능
 
+### 적절한 코드 사례 채택
+
+#### 번역
+- 하드코딩된 String은 번역이 어렵다. 따라서, String Resource로 구분해준다.
+
+---
+
+## 연습 Compose 기본 사항
