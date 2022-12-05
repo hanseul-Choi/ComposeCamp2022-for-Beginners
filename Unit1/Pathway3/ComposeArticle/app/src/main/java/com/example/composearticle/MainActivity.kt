@@ -59,10 +59,7 @@ private fun ArticleCard(
         Image(
             painter = imagePainter,
             contentDescription = null,
-            contentScale = ContentScale.Fit,
-            modifier = Modifier
-                .fillMaxWidth()
-                .wrapContentHeight()
+            contentScale = ContentScale.Fit
         )
 
         Text(

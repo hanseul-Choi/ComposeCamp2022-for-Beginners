@@ -82,3 +82,4 @@
 ---
 
 ## 연습 Compose 기본 사항
+- ContentScale을 Fit으로 설정해야 이미지 크기가 알맞게 떨어진다.
