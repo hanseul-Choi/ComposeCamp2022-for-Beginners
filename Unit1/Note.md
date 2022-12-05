@@ -83,3 +83,18 @@
 
 ## 연습 Compose 기본 사항
 - ContentScale을 Fit으로 설정해야 이미지 크기가 알맞게 떨어진다.
+- Column 안의 자식 뷰들의 정렬을 위해서는 다음 2가지를 사용해야한다.
+    - verticalArrangement(Column), verticalAlignment(Row)
+    - horizontalAlignment(Column), horizontalArrangement(Row)
+    - Arrangement는 배치, Alignment는 정렬의 의미
+- 다음은 Row의 horizontalArrangement
+
+![Compose_Arrangement](image/horizontalArrangement.png)
+
+- 다음은 Column의 verticalArrangement
+
+![Compose_Arrangement](image/verticalArrangement.png)
+
+- Column의 Modifier는 Column의 크기를 정하는 역할
+    - fillMaxWidth
+    - Modifier.height, Modifier.size
