@@ -93,7 +93,7 @@
 
 - 다음은 Column의 verticalArrangement
 
-![Compose_Arrangement](image/verticalArrangement.png)
+<center><img src="image/verticalArrangement.png" width="400" height="300"/></center>
 
 - Column의 Modifier는 Column의 크기를 정하는 역할
     - fillMaxWidth
