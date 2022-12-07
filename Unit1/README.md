@@ -98,3 +98,5 @@
 - Column의 Modifier는 Column의 크기를 정하는 역할
     - fillMaxWidth
     - Modifier.height, Modifier.size
+
+- Modifier의 적용순서에 유의하자.
