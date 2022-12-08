@@ -41,21 +41,18 @@ class MainActivity : ComponentActivity() {
 fun ComposeQuadrantApp() {
     Column(
         modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight(),
+            .fillMaxWidth(),
     ) {
         Row(
             modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(0.5f),
+                .weight(1f)
         ) {
             ComposableInfoCard(
                 title = "Text composable",
                 description = "Displays text and follows Material Design guidelines.",
                 backgroundColor = Color.Green,
                 modifier = Modifier
-                    .fillMaxWidth(0.5f)
-                    .fillMaxHeight(),
+                    .weight(1f),
             )
 
             ComposableInfoCard(
@@ -63,30 +60,26 @@ fun ComposeQuadrantApp() {
                 description = "Creates a composable that lays out and draws a given Painter class object.",
                 backgroundColor = Color.Yellow,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight(),
+                    .weight(1f),
             )
         }
         Row(
             modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(),
+                .weight(1f),
         ) {
             ComposableInfoCard(
                 title = "Row composable",
                 description = "A layout composable that places its children in a horizontal sequence.",
                 backgroundColor = Color.Cyan,
                 modifier = Modifier
-                    .fillMaxWidth(0.5f)
-                    .fillMaxHeight(),
+                    .weight(1f),
             )
             ComposableInfoCard(
                 title = "Column composable",
                 description = "A layout composable that places its children in a vertical sequence.",
                 backgroundColor = Color.LightGray,
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight()
+                    .weight(1f),
             )
         }
     }
@@ -101,6 +94,7 @@ private fun ComposableInfoCard(
 ) {
     Column(
         modifier = modifier
+            .fillMaxSize()
             .background(backgroundColor)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
